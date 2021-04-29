@@ -12,20 +12,33 @@ class _CustomDashboard extends State<CustomDashboard> {
       child: Center(
         child: Container(
           height: 200,
-          child: Card(
-            //  clipBehavior: Clip.antiAlias,
-            child: Column(
-              children: [
-                ListTile(
-                  leading: Icon(Icons.arrow_drop_down_circle),
-                  title: const Text('Card title 1'),
-                  subtitle: Text(
-                    'Secondary Text',
-                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+          width: double.infinity,
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            children: [
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 12.0),
+                child: Card(
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(top: 10.0),
+                        child: Card(
+                          child: Text("10"),
+                        ),
+                      ),
+                      Padding(
+                          padding: EdgeInsets.only(top: 10.0),
+                          child: Image.asset(
+                            'assets/images/overtime.png',
+                          )
+                          //     child: Image.asset("assets/images/overtime.png"),
+                          )
+                    ],
                   ),
                 ),
-              ],
-            ),
+              )
+            ],
           ),
         ),
       ),
