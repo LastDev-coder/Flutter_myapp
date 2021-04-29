@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      // title: 'Flutter Demo',
+      // theme: ThemeData(
+      //   primarySwatch: Colors.blue,
+      // ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
             style:
                 TextStyle(color: Colors.black87, fontWeight: FontWeight.bold),
           ),
-          backgroundColor: Colors.white,
+          backgroundColor: const Color(0xFFFBFCFC),
           actions: [
             IconButton(
               onPressed: () => {},
